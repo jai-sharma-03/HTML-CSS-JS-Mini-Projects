@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: url('./images/background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(240, 215, 215, 0.3);
+    width: 80px;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    border-right:1px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: width 0.2s ease;
+}
+.sidebar .logo{
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+}
+.logo img{
+    margin-left: 8%;
+    margin-top: 10px;
+    width: 50px;
+    border-radius: 50%;
+}
+.logo h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 18px;
+    display: none;
+
+}
+.sidebar .links{
+    height: calc(100%-500px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    margin-top: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.sidebar .links h4{
+    color: rgb(121, 121, 231);
+    display: none;
+}
+.links li{
+    display: flex;
+    align-items: center;
+}
+.links li a{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    display: none;
+}
+.links li span{
+    padding: 12px 8px;
+}
+ /* Hover  */
+ .links li:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+ }
+ .sidebar:hover{
+width: 260px;
+ }
+ .sidebar:hover .logo h2{
+    display: block;
+ }
+ .sidebar:hover .links h4 , .sidebar:hover .links li a{
+    display: block;
+ }
