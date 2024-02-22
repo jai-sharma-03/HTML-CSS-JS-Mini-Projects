@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url("https://looseweightez.com/wp-content/uploads/2020/08/19-Weight-Loss-Tips-That-Actually-Work-scaled.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+}
+
+.cl {
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: -1px -1px 12px;
+    transition: box-shadow 0.3s;
+}
+
+.cl:hover,
+button:hover {
+    box-shadow: 2px 2px 11px ;
+}
+.cl h1 {
+    margin: 0 2rem 1rem 1rem;
+    font-size: 4rem;
+    font-weight: 400;
+    color: rgb(75, 75, 239);
+}
+h1 span{
+    color: rgb(245, 156, 171);
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.input-container input {
+    height: 2rem;
+    width: 11rem;
+    margin-left: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.input-container input::placeholder {
+    font-size: 1.1rem;
+    padding: 10px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+button {
+    color: black;
+    background-color: cadetblue;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.6rem;
+}
+#result{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
